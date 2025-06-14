@@ -1,0 +1,9 @@
+apiVersion: tekton.dev/v1beta1
+kind: Pipeline
+metadata:
+  name: rails-pipeline
+spec:
+  tasks:
+    - name: build-push
+      taskRef:
+        name: build-docker-image
