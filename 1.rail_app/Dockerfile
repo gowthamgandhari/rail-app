@@ -1,6 +1,6 @@
 FROM ruby:3.2  
 RUN apt-get update -qq && apt-get install -y nodejs postgresql-client  
-WORKDIR /app  
+WORKDIR /railruby_app  
 ENV RAILS_ENV=development
 ENV BUNDLER_VERSION=2.3.26
 COPY Gemfile Gemfile.lock ./  
