@@ -1,4 +1,4 @@
-# rails-service.yaml
+# rails_service.yml
 apiVersion: v1
 kind: Service
 metadata:
@@ -7,7 +7,5 @@ spec:
   selector:
     app: rails
   ports:
-    - protocol: TCP
-      port: 3000 # Port exposed internally in the cluster
-      targetPort: 3000 # Port your Rails container listens on
+    - port: 3000
   type: ClusterIP
