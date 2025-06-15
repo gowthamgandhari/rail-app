@@ -1,8 +1,8 @@
 FROM ruby:3.2
 
-# Install dependencies
+# Install system dependencies (including libyaml-dev for psych)
 RUN apt-get update -qq && \
-    apt-get install -y curl gnupg postgresql-client
+    apt-get install -y curl gnupg postgresql-client libyaml-dev
 
 # Install Node.js
 RUN curl -fsSL https://deb.nodesource.com/setup_18.x | bash - && \
@@ -25,8 +25,8 @@ ENV BUNDLER_VERSION=2.5.23
 COPY Gemfile Gemfile.lock ./
 
 # Install bundler and gems
-RUN gem install bundler -v "$BUNDLER_VERSION" && bundle _${BUNDLER_VERSION}_ install
-
+RUN gem install bundler -v "$BUNDLER_VERSION" && \
+    bundle _${BUNDLER_VERSION}_ install
 
 # Copy the rest of the app
 COPY . .
