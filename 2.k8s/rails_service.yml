@@ -4,8 +4,10 @@ kind: Service
 metadata:
   name: rails
 spec:
-  ports:
-    - port: 3000
   selector:
     app: rails
+  ports:
+    - protocol: TCP
+      port: 3000 # Port exposed internally in the cluster
+      targetPort: 3000 # Port your Rails container listens on
   type: ClusterIP
