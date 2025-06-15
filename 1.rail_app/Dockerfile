@@ -25,7 +25,8 @@ ENV BUNDLER_VERSION=2.5.23
 COPY Gemfile Gemfile.lock ./
 
 # Install bundler and gems
-RUN gem install bundler -v "$BUNDLER_VERSION" && bundle install
+RUN gem install bundler -v "$BUNDLER_VERSION" && bundle _${BUNDLER_VERSION}_ install
+
 
 # Copy the rest of the app
 COPY . .
