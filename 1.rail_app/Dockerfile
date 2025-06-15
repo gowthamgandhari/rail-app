@@ -1,3 +1,4 @@
+HEAD
 # syntax = docker/dockerfile:1
 
 # Make sure RUBY_VERSION matches the Ruby version in .ruby-version and Gemfile
@@ -60,3 +61,43 @@ ENTRYPOINT ["/rails/bin/docker-entrypoint"]
 # Start the server by default, this can be overwritten at runtime
 EXPOSE 3000
 CMD ["./bin/rails", "server"]
+=======
+FROM ruby:3.2
+
+# Install system dependencies (including libyaml-dev for psych)
+RUN apt-get update -qq && \
+    apt-get install -y curl gnupg postgresql-client libyaml-dev
+
+# Install Node.js
+RUN curl -fsSL https://deb.nodesource.com/setup_18.x | bash - && \
+    apt-get install -y nodejs
+
+# Install Yarn
+RUN curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add - && \
+    echo "deb https://dl.yarnpkg.com/debian stable main" | tee /etc/apt/sources.list.d/yarn.list && \
+    apt-get update && \
+    apt-get install -y yarn
+
+# Set working directory
+WORKDIR /railruby_app
+
+# Set environment
+ENV RAILS_ENV=development
+ENV BUNDLER_VERSION=2.5.23
+
+# Copy Gemfile and Gemfile.lock before running bundle install
+COPY Gemfile Gemfile.lock ./
+
+# Install bundler and gems
+RUN gem install bundler -v "$BUNDLER_VERSION" && \
+    bundle _${BUNDLER_VERSION}_ install
+
+# Copy the rest of the app
+COPY . .
+
+# Expose Rails default port
+EXPOSE 3000
+
+# Start Rails server
+CMD ["rails", "server", "-b", "0.0.0.0"] 
+c6e44ac765a8a5fc5aa147eaa11973828d0fad79
