@@ -14,7 +14,8 @@ spec:
     spec:
       containers:
         - name: rails
-          image: <your-dockerhub-username>/rails-app:latest
+          image: 1rail_app-web:latest
+          imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 3000
           env:
