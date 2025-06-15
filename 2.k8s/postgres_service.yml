@@ -2,10 +2,11 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: rails
+  name: postgres
 spec:
   ports:
-    - port: 3000
+    - port: 5432
+      targetPort: 5432
   selector:
-    app: rails
+    app: postgres
   type: ClusterIP
