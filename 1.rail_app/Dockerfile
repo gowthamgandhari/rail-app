@@ -19,7 +19,7 @@ WORKDIR /railruby_app
 
 # Set environment
 ENV RAILS_ENV=development
-ENV BUNDLER_VERSION=2.3.26
+ENV BUNDLER_VERSION=2.5.23
 
 # Copy Gemfile and Gemfile.lock before running bundle install
 COPY Gemfile Gemfile.lock ./
