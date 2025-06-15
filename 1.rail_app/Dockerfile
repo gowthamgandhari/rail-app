@@ -61,6 +61,7 @@ ENTRYPOINT ["/rails/bin/docker-entrypoint"]
 EXPOSE 3000
 CMD ["./bin/rails", "server"]
 
+
 FROM ruby:3.2.8
 
 # Install system dependencies (including libyaml-dev for psych)
