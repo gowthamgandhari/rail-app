@@ -1,0 +1,19 @@
+current directory: /home/ubuntu/Testing_rail_app/1.rail_app/vendor/bundle/ruby/3.2.0/gems/debug-1.10.0/ext/debug
+/home/ubuntu/.rvm/rubies/ruby-3.2.8/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /home/ubuntu/Testing_rail_app/1.rail_app/vendor/bundle/ruby/3.2.0/gems/debug-1.10.0/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20250615-29917-hupp11 sitelibdir\=./.gem.20250615-29917-hupp11 clean
+
+current directory: /home/ubuntu/Testing_rail_app/1.rail_app/vendor/bundle/ruby/3.2.0/gems/debug-1.10.0/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20250615-29917-hupp11 sitelibdir\=./.gem.20250615-29917-hupp11
+compiling debug.c
+compiling iseq_collector.c
+linking shared-object debug/debug.so
+
+current directory: /home/ubuntu/Testing_rail_app/1.rail_app/vendor/bundle/ruby/3.2.0/gems/debug-1.10.0/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20250615-29917-hupp11 sitelibdir\=./.gem.20250615-29917-hupp11 install
+/usr/bin/install -m 0755 debug.so ./.gem.20250615-29917-hupp11/debug
+
+current directory: /home/ubuntu/Testing_rail_app/1.rail_app/vendor/bundle/ruby/3.2.0/gems/debug-1.10.0/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20250615-29917-hupp11 sitelibdir\=./.gem.20250615-29917-hupp11 clean

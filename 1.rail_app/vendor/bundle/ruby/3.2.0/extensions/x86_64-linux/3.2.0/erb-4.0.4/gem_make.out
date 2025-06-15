@@ -1,0 +1,18 @@
+current directory: /home/ubuntu/Testing_rail_app/1.rail_app/vendor/bundle/ruby/3.2.0/gems/erb-4.0.4/ext/erb/escape
+/home/ubuntu/.rvm/rubies/ruby-3.2.8/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /home/ubuntu/Testing_rail_app/1.rail_app/vendor/bundle/ruby/3.2.0/gems/erb-4.0.4/ext/erb/escape
+make DESTDIR\= sitearchdir\=./.gem.20250615-29917-8buayz sitelibdir\=./.gem.20250615-29917-8buayz clean
+
+current directory: /home/ubuntu/Testing_rail_app/1.rail_app/vendor/bundle/ruby/3.2.0/gems/erb-4.0.4/ext/erb/escape
+make DESTDIR\= sitearchdir\=./.gem.20250615-29917-8buayz sitelibdir\=./.gem.20250615-29917-8buayz
+compiling escape.c
+linking shared-object erb/escape.so
+
+current directory: /home/ubuntu/Testing_rail_app/1.rail_app/vendor/bundle/ruby/3.2.0/gems/erb-4.0.4/ext/erb/escape
+make DESTDIR\= sitearchdir\=./.gem.20250615-29917-8buayz sitelibdir\=./.gem.20250615-29917-8buayz install
+/usr/bin/install -m 0755 escape.so ./.gem.20250615-29917-8buayz/erb
+
+current directory: /home/ubuntu/Testing_rail_app/1.rail_app/vendor/bundle/ruby/3.2.0/gems/erb-4.0.4/ext/erb/escape
+make DESTDIR\= sitearchdir\=./.gem.20250615-29917-8buayz sitelibdir\=./.gem.20250615-29917-8buayz clean

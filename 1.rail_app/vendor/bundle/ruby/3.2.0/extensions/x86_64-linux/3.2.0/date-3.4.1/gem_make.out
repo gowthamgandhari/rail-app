@@ -1,0 +1,24 @@
+current directory: /home/ubuntu/Testing_rail_app/1.rail_app/vendor/bundle/ruby/3.2.0/gems/date-3.4.1/ext/date
+/home/ubuntu/.rvm/rubies/ruby-3.2.8/bin/ruby extconf.rb
+checking for rb_category_warn()... yes
+checking for timezone in time.h with  -Werror... yes
+checking for altzone in time.h with  -Werror... no
+creating Makefile
+
+current directory: /home/ubuntu/Testing_rail_app/1.rail_app/vendor/bundle/ruby/3.2.0/gems/date-3.4.1/ext/date
+make DESTDIR\= sitearchdir\=./.gem.20250615-29917-pvbvns sitelibdir\=./.gem.20250615-29917-pvbvns clean
+
+current directory: /home/ubuntu/Testing_rail_app/1.rail_app/vendor/bundle/ruby/3.2.0/gems/date-3.4.1/ext/date
+make DESTDIR\= sitearchdir\=./.gem.20250615-29917-pvbvns sitelibdir\=./.gem.20250615-29917-pvbvns
+compiling date_core.c
+compiling date_parse.c
+compiling date_strftime.c
+compiling date_strptime.c
+linking shared-object date_core.so
+
+current directory: /home/ubuntu/Testing_rail_app/1.rail_app/vendor/bundle/ruby/3.2.0/gems/date-3.4.1/ext/date
+make DESTDIR\= sitearchdir\=./.gem.20250615-29917-pvbvns sitelibdir\=./.gem.20250615-29917-pvbvns install
+/usr/bin/install -m 0755 date_core.so ./.gem.20250615-29917-pvbvns
+
+current directory: /home/ubuntu/Testing_rail_app/1.rail_app/vendor/bundle/ruby/3.2.0/gems/date-3.4.1/ext/date
+make DESTDIR\= sitearchdir\=./.gem.20250615-29917-pvbvns sitelibdir\=./.gem.20250615-29917-pvbvns clean

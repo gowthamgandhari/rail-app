@@ -1,0 +1,18 @@
+current directory: /home/ubuntu/Testing_rail_app/1.rail_app/vendor/bundle/ruby/3.2.0/gems/racc-1.8.1/ext/racc/cparse
+/home/ubuntu/.rvm/rubies/ruby-3.2.8/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /home/ubuntu/Testing_rail_app/1.rail_app/vendor/bundle/ruby/3.2.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20250615-29917-wq330f sitelibdir\=./.gem.20250615-29917-wq330f clean
+
+current directory: /home/ubuntu/Testing_rail_app/1.rail_app/vendor/bundle/ruby/3.2.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20250615-29917-wq330f sitelibdir\=./.gem.20250615-29917-wq330f
+compiling cparse.c
+linking shared-object racc/cparse.so
+
+current directory: /home/ubuntu/Testing_rail_app/1.rail_app/vendor/bundle/ruby/3.2.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20250615-29917-wq330f sitelibdir\=./.gem.20250615-29917-wq330f install
+/usr/bin/install -m 0755 cparse.so ./.gem.20250615-29917-wq330f/racc
+
+current directory: /home/ubuntu/Testing_rail_app/1.rail_app/vendor/bundle/ruby/3.2.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20250615-29917-wq330f sitelibdir\=./.gem.20250615-29917-wq330f clean
