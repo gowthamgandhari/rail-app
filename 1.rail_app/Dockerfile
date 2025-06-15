@@ -60,8 +60,8 @@ ENTRYPOINT ["/rails/bin/docker-entrypoint"]
 # Start the server by default, this can be overwritten at runtime
 EXPOSE 3000
 CMD ["./bin/rails", "server"]
-=======
-FROM ruby:3.2
+
+FROM ruby:3.2.8
 
 # Install system dependencies (including libyaml-dev for psych)
 RUN apt-get update -qq && \
