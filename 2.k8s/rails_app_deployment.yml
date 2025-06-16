@@ -21,3 +21,4 @@ spec:
           env:
             - name: DATABASE_HOST
               value: postgres
+

@@ -14,5 +14,7 @@ spec:
             backend:
               service:
                 name: rails
-                port:
-                  number: 3000
+                port: 
+                number: 3000
+
+                
