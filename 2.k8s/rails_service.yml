@@ -8,4 +8,6 @@ spec:
     app: rails
   ports:
     - port: 3000
-  type: ClusterIP
+      targetPort: 3000
+      nodePort: 32000 # You can choose a port between 30000-32767
+  type: NodePort
